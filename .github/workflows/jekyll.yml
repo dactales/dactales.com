@@ -1,0 +1,38 @@
+name: Deploy Site 🚀
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Check out sources
+      uses: actions/checkout@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install bundler
+      run: |
+        sudo apt-get install -y bundler
+
+    - name: Install dependencies
+      run: |
+        bundler install
+
+    - name: Build with jekyll
+      run: |
+        bundle exec jekyll build
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site
+        cname: dactales.com
