@@ -1,26 +1,47 @@
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section class="success" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
+                    <h2>Expertise</h2>
+                    <hr class="star-light">
+                    <span class="slogan">{{ site.expertise.slogan }}</span><br/><br/>
                 </div>
             </div>
             <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>
+                        {{ site.expertise.left }}
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    {% if site.expertise.right %}
+                        <ul>
+                            {% for item in site.expertise.right %}
+                            <li><p>{{ item }}</p></li>
+                            {% endfor %}
+                        </ul>
+                    {% else %} // var is a string
+                        <p>{{site.expertise.right}}</p>
+                    {% endif %}
+                </div>
+            </div>
+            <!--<div class="row">
                 {% for post in site.posts %}
                     <div class="col-sm-4 portfolio-item">
                         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
                                     <i class="fa fa-search-plus fa-3x"></i>
+                                    <br />
+                                    {{ post.title }}
                                 </div>
                             </div>
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                         </a>
                     </div>
                 {% endfor %}
-            </div>
+            </div>-->
         </div>
     </section>

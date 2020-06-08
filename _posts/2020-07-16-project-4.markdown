@@ -1,10 +1,10 @@
 ---
 layout: default
-modal-id: 2
-date: 2014-07-17
-img: circus.png
+modal-id: 4
+date: 2014-07-16
+img: safe.png
 alt: image-alt
-title: DevOps
+title: Decentralization
 project-date:
 client:
 category:

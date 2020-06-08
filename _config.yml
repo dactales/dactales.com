@@ -1,11 +1,30 @@
 # Site settings
 title: DacTales
+logo: logo.png
+print_title_with_logo: false
 email: contact@dactales.com
 url: https://github.com/dactales
 description: ""
 keywords: "blockchain graphene development full-stack"
 skills: "We know about decentralized business"
-meta_author: 
+
+about_left: "We are a team of experts that has been building applications on Blockchains since 2014."
+about_right: "Blockchain as a technology dates back to 2009. We dived in, first as fans, then professionally. We established our company with a strong international focus. To date, our team involves Blockchain as well as Business and Marketing experts with extensive international experience, network and academic background."
+
+meta_author: "DacTales B.V."
+
+expertise:
+  slogan: "Customer first, process second, technology third"
+  left:
+  - "Blockchain A to Z"
+  right:
+  - "Modeling, Design & Tokenomics"
+  - "Decentralization & Centralization"
+  - "Development"
+  - "Continous Integration and Deployment"
+  - "Marketing and Brand Consultancy"
+  - "Boardroom Processes & Establishing Business Goals"
+
 
 # Google webmaster tools
 google_verify:
@@ -33,27 +52,21 @@ color:
 # Footer settings
 footer:
   copyright: DacTales B.V.
-  location: The Netherlands
+  location: Company
   social: Around the Web
-  credits: Credits
+  credits:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-#   - title: twitter
-#     url: http://twitter.com/dactales
-#   - title: facebook
-#     url:
-#   - title: stack-overflow
-#     url: http://stackoverflow.com/questions/tagged/jekyll
-#   - title: bitbucket
-#     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/dactales
 
 # Postal address (add as many lines as necessary)
 address:
+  - line: DacTales B.V.  
   - line: Pelmolenlaan 2
-  - line: 3447GW Woerden
+  - line: 3447GW Woerden, Netherlands
+  - line: "KvK Number: 77934849"
 
 # Credits content
 credits: ''

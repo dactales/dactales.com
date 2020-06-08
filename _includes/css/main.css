@@ -109,6 +109,12 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+.slogan {
+    font-size: 1.25em;
+    font-weight: 300;
+    font-style: italic;
+}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -120,6 +126,10 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
+        font-size: 1.75em;
+    }
+
+    .slogan {
         font-size: 1.75em;
     }
 }
@@ -457,5 +467,5 @@ footer .footer-below {
 }
 
 .form-control {
- color: #eee;
+ color: #000000;
 }
